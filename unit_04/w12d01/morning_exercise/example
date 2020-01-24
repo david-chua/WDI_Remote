@@ -1,0 +1,58 @@
+<<<<<<< HEAD
+1)
+  a = "marc"
+  a.reverse!
+
+2) string = "pickle"
+  string.include? "ick"
+
+3) number = 249092
+  number.even?
+
+4) x = "The girl is on fire"
+  x.split
+
+5) value = "banana"
+  value.gsub!("a", "!")
+
+6) cupcake = {
+  "chocolate" => 4,
+  "strawberry" => 0,
+  "vanilla" => 3
+}
+cupcake.key?("vanilla")
+}
+
+7)weather = {:snow => true, :rain => false, :sun => false}
+weather.count
+
+8)tally = {"x" => 100, "y" => 200}
+tally.invert
+
+9) x = [2, 4, 6]
+x.shuffle
+
+10)y =  ["b","b","q"]
+ y.join('-')
+
+11) v = "McDonald's"
+  v.swapcase
+
+12) s = {"small" => 3, "medium" => 5, "large" => 12}
+s.to_a
+
+13) q = ["Luke", "Yoda", "Yoda", "Boba", "Luke"]
+q.sample
+
+14) a = [[1,1], [2,2], [3,3,3]]
+a.flatten
+
+15) a = " bat m a n "
+  a.gsub(/\s+/, '')
+
+16) a = ["Luke", "Yoda", "Yoda", "Boba", "Luke"]
+a.uniq
+
+17) r = ["Ginger", "Sporty", "Scary", "Baby"]
+r.unshift("Posh")
+=======

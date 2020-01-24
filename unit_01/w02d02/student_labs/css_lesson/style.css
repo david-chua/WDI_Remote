@@ -1,0 +1,46 @@
+p {
+  background-color: #00BCD4;
+  border: 5px solid red;
+  /*border-width: 5px;
+  border-style: solid;
+  border-color: red;*/
+  padding: 25px;
+  margin: 25px;
+  height: 200px;
+  width: 600px;
+  box-sizing: border-box;
+  overflow: auto;
+}
+
+span {
+  border: 1px solid black;
+  padding: 10px;
+  margin: 10px;
+  display: none;
+}
+
+#container {
+    height: 500px;
+    width: 500px;
+    background-color: gray;
+}
+#square1 {
+    background-color: red;
+    height: 100px;
+    width: 100px;
+}
+#square2 {
+    background-color: blue;
+    height: 100px;
+    width: 100px;
+}
+#square3 {
+    background-color: green;
+    height: 100px;
+    width: 100px;
+}
+#square4 {
+    background-color: black;
+    height: 100px;
+    width: 100px;
+}

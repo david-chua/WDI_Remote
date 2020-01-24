@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html ng-app='coffeApp'>
+  <head>
+    <meta charset="utf-8">
+    <title>Ye Old Coffee Shop</title>
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+ <link rel="stylesheet" href="css/styles.css">
+ <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.js"></script>
+ <script src="js/app.js"></script>
+  </head>
+  <body ng-controller='coffeAppContoller as menu'>
+    <ul>
+      <li ng-repeat='item in menu.coffeApp'>{{item.name}}
+        <ul>
+          <li>{{item.price | currency}}</li>
+          <li>{{item.size}}</li>
+          <li ng-show='img' class="ng-hide"><img src="{{item.img}}"></li>
+        </ul>
+      </li>
+
+    </ul>
+<!-- {{2+1}} -->
+  </body>
+</html>

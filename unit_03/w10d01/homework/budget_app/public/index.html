@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html ng-app="budgetApp">
+  <head>
+    <meta charset="utf-8">
+    <title>Budget App</title>
+    <!-- angular script -->
+      <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
+      <!-- UI router script -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.15/angular-ui-router.min.js"></script>
+      <script src="js/router.js"></script>
+      <script src="js/creditsController.js"></script>
+      <script src="js/expensesController.js"></script>
+      <link rel="stylesheet" href="/css/styles.css">
+  </head>
+  <body ng-controller="creditsController as credits">
+      <div ng-controller="expensesController as expenses">
+        <div>
+          <div>
+            <button>Balance</button>
+            <button>Expenses</button>
+            <button>Credit</button>
+          </div>
+        </div>
+      </div>
+
+  </body>
+</html>

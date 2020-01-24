@@ -1,0 +1,63 @@
+h1 {
+  color: red;
+}
+
+.dropdown{
+  float: left;
+}
+.dropbutton{
+  height: 30px;
+  width: 160px;
+}
+.monthdropbutton{
+  height: 30px;
+  width: 160px;
+}
+
+.yeardropbutton{
+  height: 30px;
+  width: 160px;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #3CC7EB;
+  min-width: 160px;
+  height: 130px;
+  overflow: scroll;
+  text-align: center;
+}
+
+.monthdrop-content{
+  display: none;
+  position: absolute;
+  background-color: #3CC7EB;
+  min-width: 160px;
+  height: 130px;
+  overflow: scroll;
+  text-align: center;
+}
+
+.yeardrop-content{
+  display: none;
+  position: absolute;
+  background-color: #3CC7EB;
+  min-width: 160px;
+  height: 130px;
+  overflow: scroll;
+  text-align: center;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+.dropdown:hover .monthdrop-content{
+  display: block;
+}
+.dropdown:hover .yeardrop-content{
+  display: block;
+}
+hr{
+
+  clear: both;
+}

@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html ng-app="IntroToAngularApp">
+  <head>
+    <meta charset="utf-8">
+    <title> Intro to Angular</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/homeController.js"></script>
+  </head>
+  <body ng-controller="HomeController as home">
+  {{ home.awesome }} <br>
+  {{home.movies}}
+<<ul>
+  <li ng-repeat= "x in home.movies"> {{x}}</li>
+</ul>
+  </body>
+</html>

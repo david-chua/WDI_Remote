@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html ng-app='pinspiration_app'>
+  <head>
+    <meta charset="utf-8">
+    <title>Pinspiration</title>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.15/angular-ui-router.min.js"></script>
+    <script type="text/javascript" src="js/router.js"></script>
+    <script type="text/javascript" src='js/app.js'></script>
+    <script type="text/javascript" src='js/masonry.js'></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://use.fontawesome.com/e0fcc81126.js"></script>
+  </head>
+  <body ng-controller="MainController as main">
+    <h1>Pinspiration</h1>
+
+    <!-- the other views show up here -->
+    <ui-view>
+    </ui-view>
+
+
+  </body>
+</html>

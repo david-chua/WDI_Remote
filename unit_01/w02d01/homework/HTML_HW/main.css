@@ -1,0 +1,52 @@
+body {
+  text-align: center;
+  background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Railway_workshop_museum_exhibition_in_Ljubljana%2C_Slovenia.jpg/1024px-Railway_workshop_museum_exhibition_in_Ljubljana%2C_Slovenia.jpg");
+  background-size: cover;
+  font-family: "Lucida Sans", Sans-Serif;
+  font-size: 20px;
+}
+
+a {
+  background: rgba(255,255,255,0.6);
+  color: rgb(0,0,0);
+}
+
+section {
+  color: #DDDDDD;
+  background-color: rgba(255,255,255,0.6);
+}
+
+article {
+  color: #DDDDDD;
+background-color: rgba(255,255,255,0.6);
+}
+
+h2 {
+  color: #DDDDDD;
+  background-color: rgba(255,255,255,0.6);
+}
+
+h1 {
+  color: #DDDDDD;
+  background-color: rgba(255,255,255,0.6);
+  font-weight: bolder;
+  font-size: 45px;
+}
+
+label {
+  color: #0000FF;
+  font-family: "Impulse", sans-serif;
+  font-size: 14px;
+}
+
+select {
+  color: #0000FF;
+  font-family: "Impulse", sans-serif;
+  font-size: 14px;
+}
+
+.button {
+  font-size: 60px;
+  background-color: #FF0000;
+  color: #FFFFFF;
+}

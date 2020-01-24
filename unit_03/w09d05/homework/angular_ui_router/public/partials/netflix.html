@@ -1,0 +1,24 @@
+<section id="netflix">
+    <!-- All your code goes inside this <section> -->
+
+    <h1>NETFLIX</h1>
+
+    <form>
+        <input ng-model="title" placeholder="movie title">
+        <button ng-click="netflix.getPoster(title)">Gimme the Poster!</button>
+    </form>
+    <div ng-if="netflix.searchResult">
+        <img src="{{netflix.searchResult.poster}}" alt="">
+        <button ng-click="netflix.savePoster()">Save Me!</button>
+    </div>
+
+
+    <h3 ng-click="netflix.getSaved()">See All my saved movies</h3>
+    <div ng-repeat="movie in netflix.savedMovies">
+        <img ng-src="{{movie.poster}}" alt="">
+        <button ng-click="netflix.deleteMovie(movie, $index)">Delete movie</button>
+    </div>
+
+
+
+</section>

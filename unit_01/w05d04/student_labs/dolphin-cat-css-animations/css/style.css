@@ -1,0 +1,54 @@
+body {
+  background: url("../images/background.jpg") no-repeat center center fixed;
+  background-size: cover;
+}
+
+#cat {
+  width: 300px;
+  height: 300px;
+  position: absolute;
+  bottom: -20px;
+  animation-name: walk;
+  animation-duration: 10s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+
+@keyframes walk {
+  0% {left: 0px; top: 500px;}
+  10% {left:40px; top:450px;}
+  15% {left:80px; top:400px;}
+  20% {left:120px;top:350px;}
+  25% {left:160px; top:300px;}
+  30% {left:300px; top: 200px;}
+  35% {left:300px;
+      top:200px;
+      transform:rotate(0deg);
+      }
+  40% {left:300px;
+        top:200px;
+        transform:rotate(-30deg);
+      }
+  45% {left:300px;
+        top:200px;
+        transform:rotate(315deg);
+      }
+  50% {left:400px; top: 200px; transform: rotate(0deg);}}
+  55% {left:500px; top:300px;}
+  75% {left:60px; top:400px;}
+  100%{left: 600px; top: 500px;}
+}
+/*/
+@keyframes moonwalk {
+}
+
+@keyframes pacer {
+}
+
+@keyframes beffies {
+}
+
+@keyframes larrybird {
+}
+*/

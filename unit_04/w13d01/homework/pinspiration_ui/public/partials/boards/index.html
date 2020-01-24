@@ -1,0 +1,18 @@
+<div ng-controller="boardController as main">
+  <h2> All Boards </h2>
+  <div ng-repeat="board in main.boards">
+    <div class="BoardName"><i class="fa fa-folder" aria-hidden="true"></i> {{board.title}} </div>
+  </div>
+
+
+  <div>
+  <div class="addBoard"><button ng-click="main.showAdd = !main.showAdd">  <i class="fa fa-plus" aria-hidden="true"></i> Add A Board</button></div>
+</div>
+
+  <div class="AddForm" ng-show="main.showAdd">
+    <form ng-submit= "main.addBoard()">
+      <label> Board Title </label>
+      <input type="text" ng-model'main.newBoard.title' title="title">
+      <input type="submit" value="Create Board">
+    </form>
+  </div>

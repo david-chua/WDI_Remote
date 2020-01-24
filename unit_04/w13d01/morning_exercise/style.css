@@ -1,0 +1,17 @@
+<<<<<<< HEAD
+div h1{
+  float: clear;
+  font-size: 2rem;
+  text-align: center;
+}
+
+nav {
+  float: right;
+}
+div h2{
+  font-size: 2rem;
+=======
+div{
+  background: green;
+>>>>>>> a7c8410fc18709ac667a8cf89c1278684f58bdaa
+}

@@ -1,0 +1,13 @@
+<h1> Edit Pokemon Info </h1>
+
+<form action="/pokemon/{{pokemon.id}}?_method=PUT" method="POST">
+  <input type="number" name="id" placeholder="Id" value="{{pokemon.id}}"><br>
+  <input type="text" name="name" placeholder="Name" value="{{pokemon.name}}"><br>
+  <input type="text" name="img" placeholder="Image Link" value="{{pokemon.img}}"><br>
+  <input type="text" name="type" placeholder="Type" value="{{pokemon.type}}"><br>
+  <input type="text" name="stats" placeholder="Stats" value="{{pokemon.stats}}"><br>
+  <input type="text" name="moves" placeholder="Moves" value="{{pokemon.moves}}"><br>
+  <input type="text" name="damages" placeholder="Damages" value="{{pokemon.damages}}"><br>
+  <input type="text" name="misc" placeholder="Miscellaneous" value="{{pokemon.misc}}"><br>
+  <input type="submit" value="Submit Changes">
+</form>

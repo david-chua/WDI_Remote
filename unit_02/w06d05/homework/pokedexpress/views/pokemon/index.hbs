@@ -1,0 +1,22 @@
+<h1> Gotta Catch'Em All </h1>
+
+<ul>
+  {{#each pokemon}}
+
+  <!-- show each -->
+  <li><a href="/pokemon/{{@index}}"><h2>{{name}}</h2></a></li>
+<!-- edit -->
+  <div>
+    <a href="pokemon/{{@index}}/edit"> Edit </a>
+  </div>
+<!-- delete -->
+  <form action="/pokemon/{{@index}}?_method=DELETE" method="POST">
+    <input type="submit" value="Say Goodbye to this Pokemon">
+  </form>
+
+  {{/each}}
+</ul>
+
+<form action="/pokemon/new">
+  <input type="submit" value="Create a New Pokemon">
+</form>

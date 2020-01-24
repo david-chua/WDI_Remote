@@ -1,0 +1,25 @@
+<section id="quotes">
+    <!-- All your code goes inside this <section> -->
+
+    <h1>RON SWANSON QUOTE OF THE DAY</h1>
+    <img src="http://img.pandawhale.com/49199-Ron-Swanson-this-is-my-hell-hvOC.png" alt=""><br>
+    <button ng-click="quotes.getQuote()">Get Swansonized</button>
+    <div ng-if="quotes.msg">{{quotes.msg}}</div>
+    <ul>
+        <li ng-repeat="quote in quotes.tempQuotes">{{quote}}<button ng-click="quotes.saveQuote(quote)">Save Me!</button></li>
+    </ul>
+
+    <h3 ng-click="quotes.getSaved()">See All my saved quotes</h3>
+    <ul>
+        <li ng-repeat="quote in quotes.savedQuotes">
+            <div ng-hide="quote.showEdit">{{quote.name}}</div>
+            <form ng-submit="quotes.updateQuote(quote)" ng-show="quote.showEdit">
+                <input ng-model="quote.name" placeholder="{{quote.name}}">
+                <input type="submit">
+            </form>
+            <button ng-click="quote.showEdit = !quote.showEdit">Edit quote</button>
+            <p ng-click="quotes.deleteQuote(quote, $index)">Delete quote</p>
+        </li>
+    </ul>
+
+</section>

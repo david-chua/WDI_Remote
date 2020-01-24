@@ -1,0 +1,23 @@
+body {
+
+}
+div {
+width: 300px;
+margin: 0 auto;
+background-color: yellow;
+}
+
+@media (min-width: 500px) {
+  div {
+    width: 100%;
+  }
+}
+
+@media (max-width: 600px) {
+  div {
+    float: left;
+    width: 25%;
+    border: 1px solid black;
+    box-sizing: border-box;
+  }
+}

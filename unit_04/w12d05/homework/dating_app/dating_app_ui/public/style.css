@@ -1,0 +1,53 @@
+header {
+  text-align: center;
+  font-size: 30px;
+  font-family: 'Lora', serif;
+}
+  .flexbox {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  border: 1px solid red;
+}
+
+.body {
+  display: flex;
+  flex: 1;
+  border: 1px solid red;
+}
+
+.middle{
+  flex: 1;
+  border: 1px solid red;
+
+}
+
+.left, .right {
+  /* 12em is the width of the columns */
+  flex: 0 0 12em;
+  border: 1px solid red;
+}
+
+.left {
+  /* put the nav on the left */
+  order: -1;
+  border: 1px solid red
+}
+
+footer {
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .body {
+    flex-direction: row;
+    flex: 1;
+  }
+  .middle {
+    flex: 1;
+  }
+  .left, .right {
+    /* 12em is the width of the columns */
+    flex: 0 0 12em;
+  }
+}

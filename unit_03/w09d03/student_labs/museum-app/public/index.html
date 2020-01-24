@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html ng-app="theMET">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
+    <script src='js/app.js'></script>
+    <script src='js/donorController.js'></script>
+    <script src='js/exhibitController.js'></script>
+    <script src='js/generalInfoController.js'></script>
+
+    <title>Museum App</title>
+  </head>
+
+  <body ng-controller= "ExhibitController as exhibit" ng-controller="GeneralInfoController as info" ng-controller="DonorController as donor" >
+   <h1> The Metropolitan Museum of Art </h1>
+<hr>
+  <h2> Exhibit: </h2>
+  <img src="{{exhibit.image_url}}">
+  <h3> {{exhibit.title}}</h3>
+  <h3> {{exhibit.artist}}</h3>
+
+<hr>
+
+<h2> General Info </h2>
+<h3> Hours: </h3>
+{{info.Hours}}
+<li ng-repeat="x in info.Hours">{{info.Hours}}</li>
+  </body>
+</html>

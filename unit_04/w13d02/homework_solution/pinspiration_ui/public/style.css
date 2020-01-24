@@ -1,0 +1,95 @@
+
+html{
+  background: #e9e9e9;
+  color: #333;
+}
+
+a, h1{
+  color: #CD1B1F;
+  text-decoration:none;
+}
+
+/****************************************************
+Main Page styling
+****************************************************/
+
+body{
+  max-width:45em;
+  font-family:"Helvetica Neue", sans-serif;
+  background: #fff;
+  padding:2em;
+  margin:2em auto;
+  border-radius: 5px;
+  box-shadow: 3px 3px 2px #ccc;
+}
+
+.row.board:nth-of-type(2n+1){
+  background: #e9e9e9;
+}
+
+.board.row{
+  padding:1em;
+  font-weight:bold;
+}
+
+.create{
+  cursor: pointer;
+  width: 110px;
+  background: #b0e460;
+  padding: 0.8em;
+  border-radius: 9px;
+  font-size: 12px;
+  text-align: center;
+}
+
+input{
+  height: 25px;
+  width: 98%;
+  margin: 5px 0;
+}
+
+input:focus {
+    outline: none !important;
+    border:1px solid #b0e460;
+    box-shadow: 0 0 5px #b0e460;
+}
+
+
+/****************************************************
+PINS STYLING: based on
+https://codepen.io/dudleystorey/pen/yqrhw
+****************************************************/
+
+#columns {
+  column-width: 200px;
+  column-gap: 15px;
+  max-width: 1100px;
+  margin: 50px auto;
+}
+
+div#columns div {
+	background: #fefefe;
+	border: 2px solid #fcfcfc;
+	box-shadow: 0 1px 2px rgba(34, 25, 25, 0.4);
+	margin: 0 2px 15px;
+	padding-bottom: 10px;
+	transition: opacity .4s ease-in-out;
+  display: inline-block;
+  column-break-inside: avoid;
+}
+
+div#columns div img {
+	width: 100%; height: auto;
+	border-bottom: 1px solid #ccc;
+	padding-bottom: 15px;
+	margin-bottom: 5px;
+}
+
+div#columns:hover div:not(:hover) {
+	opacity: 0.7;
+}
+
+@media screen and (max-width: 750px) {
+  #columns { column-gap: 0px; }
+  #columns div { width: 100%; }
+}

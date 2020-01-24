@@ -1,0 +1,22 @@
+<section id="quotes">
+<!-- All your code goes inside this <section> -->
+
+  <h1>RON SWANSON QUOTE OF THE DAY</h1>
+
+  <button ng-click="quotes.getQuote()">Get Swansonized</button>
+
+  <ul>
+    <li ng-repeat="quote in quotes.newQuotes"> {{quote}}
+    <button ng-click="quotes.saveQuote(quote)"> Save This Quote</button></li>
+  </ul>
+
+    <h3 ng-click="quotes.getSaved()">See All my saved quotes</h3>
+<ul>
+  <li ng-repeat="quote in quote.savedQuotes">
+  <form>
+      <button> Edit Quote </button>
+      <button> Delete Quote </button>
+  </form>
+  </li>
+</ul>
+</section>

@@ -1,0 +1,75 @@
+/***************************
+  INDEX.HTML FUNKY SQUARES
+****************************/
+
+.funky-square {
+  display: inline-block;
+  background-color: #0074d9;
+  height: 200px;
+  width: 200px;
+  margin-right: 5px;
+  margin-left: 5px;
+  opacity: .7;
+  animation-name: rotate;
+  animation-duration: 3s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+@keyframes rotate {
+  0% {transform: rotate(0deg);}
+  50% {transform: rotate(90deg);}
+  100% {transform: rotate(180deg);}
+
+
+
+/***************************
+  SONIC.HTML SONIC
+****************************/
+.sonic > img {
+  height: 300px;
+  width: 300px;
+
+
+
+@keyframes move {
+  0%{top: 100px; left: 100px;}
+  30%{top: 100px; left: 150px;}
+  100% {top: 100px; left: 700px;}
+}
+
+.sonic > img:hover {
+  animation-name: move;p
+}
+
+/***************************
+  ZEN.HTML
+****************************/
+
+ body > #box {
+  background-color: #FFFFFF;
+  animation: colorchange 30s;
+  display: block;
+}
+
+@keyframes colorchange {
+  0% {background: #FFFFFF;}
+  10% {background: #7EFFFF;}
+  20% {background: #00FFFF;}
+  30% {background: #00B3FF;}
+  40% {background: #0045FF;}
+  50% {background: #0000BD;}
+  60% {background: #000054;}
+  70% {background: #510054;}
+  80% {background: #5C00BD;}
+  90% {background: #7D0073;}
+  100% {background: #4A0018;}
+}
+/***************************
+  FLEXBOX.HTML DOGS IN VESTS
+****************************/
+
+.flex-grid {
+  display: flex;
+  flex-direction: row;
+}

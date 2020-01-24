@@ -1,0 +1,31 @@
+body {
+  margin: 0;
+}
+
+.box {
+  border: 1px solid purple;
+  background-color: red;
+  height: 10em;
+  width: 10em;
+}
+
+li {
+  display: inline-block;
+  font-size: 1rem;
+  float: left;
+  list-style: none;
+  padding: 1em;
+  border: 1px solid gray;
+  border-radius: 19px;
+  margin: 5px;
+  width: calc(25%-3em)
+}
+
+ul {
+  background-color: yellow;
+  /*overflow: auto;*/
+}
+
+/*.clear {
+  clear: both;
+}*/

@@ -1,0 +1,19 @@
+<h2>All Boards</h2>
+
+<div ng-repeat="board in main.boards" ng-click="main.showBoard(board)" class='board row'>
+  <i class="fa fa-bookmark-o" aria-hidden="true"></i> {{board.title}}
+</div>
+
+<div>
+  <h3 class="create" ng-click="showForm = !showForm"><i class="fa fa-plus" aria-hidden="true"></i>  Add New Board</h3>
+</div>
+
+<!-- New Board Form -->
+<div class="show-form">
+  <div ng-show="showForm">
+    <form ng-submit="main.createBoard()">
+      <input ng-model="main.newBoardTitle.title" type="text" placeholder="Board Title"/>
+      <button ng-click="showForm = false">Create Board</button>
+    </form>
+  </div>
+</div>

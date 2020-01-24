@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html ng-app="dating_app">
+  <head>
+    <meta charset="utf-8">
+    <title> Date a Match</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.15/angular-ui-router.js"></script>
+    <script src="app.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Lora:700" rel="stylesheet">
+  </head>
+  <body class="flexbox" ng-controller="MainController as main">
+    <header> Better Than Tinder</header>
+  <div class="body">
+    <main class="middle">
+      <div ng-show="main.userPop(user)">
+      <h2>{{main.user.name}}</h2>
+      <img src="{{main.user.img}}"></img>
+      <h3> {{main.user.gender}} </h3>
+      </div>
+    </main>
+    <nav class="left">
+      <div class="box" ng-repeat="user in main.users | limitTo: 3 | limitTo: -3">
+        <h2> {{user.name}} </h2>
+        <img ng-click="main.userEdit(user)" ng-mouseover="main.userPop(user)" src="{{user.img}}"</img>
+        <h2> {{user.gender}} <h2>
+      </div>
+    </nav>
+    <aside class="right">
+      <div class="box" ng-repeat="user in main.users | limitTo: 6 | limitTo: -3">
+        <h2>{{user.name}}</h2>
+        <img ng-click="main.userEdit(user)" ng-mousever="main.userPop(user)" src="{{user.img}}"</img>
+        <h2>{{user.gender}}</h2>
+      </div>
+
+    </aside>
+  </div>
+  <footer>
+    <form ng-submit="main.addUser()">
+      <h2> Add A User </h2>
+      <div>
+        <label> Name: </label>
+        <input type="text" placeholder="Name" ng-model='main.newUser.name'>
+      </div>
+      <div>
+        <label> Age: </label>
+        <input type="text" placeholder="Age" ng-model='main.newUser.age'>
+      </div>
+      <div>
+        <label> Gender: </label>
+        <input type="text" placeholder="Gender" ng-model='main.newUser.gender'>
+      </div>
+      <div>
+        <label> Image Link: </label>
+        <input type="text" placeholer="Image Link" ng-model='main.newUser.img'>
+      </div>
+
+      <div>
+        <input type="submit" value="Add User">
+      </div>
+    </form>
+
+
+  </footer>
+
+
+
+
+  </body>
+</html>
